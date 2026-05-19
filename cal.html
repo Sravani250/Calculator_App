@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Basic Calculator App</title>
+ <style>
+   .cal{
+      border:2px solid black;
+      width:450px;
+      height:600px;
+      margin:50px auto;
+      background-color:grey;
+     }
+    .display{
+      border:2px solid black;
+      width:405px;
+      height:150px;
+      margin:25px;
+      background-color:yellow;
+      font-size: 40px;          
+      font-weight: bold;
+      display: flex;            
+      justify-content: flex-end;
+      align-items: center;      
+      padding: 0 20px;          
+      box-sizing: border-box;   
+      overflow-x: auto;
+    }
+    .num{
+      border:2px solid black;
+      width:400px;
+      height:370px;
+      margin:25px;
+    }
+    .buttons{
+       display:grid;
+       grid-template-rows:repeat(5,1fr);
+       grid-template-columns:repeat(4,1fr);
+       gap:10px;
+       height:100%;
+    }
+    button{
+     width:80px;
+     height:50px;
+     border-radius:100px;
+     margin:auto;
+     background-color:orange;
+     font-weight:bold;
+     font-size:25px;
+   }
+       
+</style>
+</head>
+<body>
+<div class="cal">
+<div class="display" id="screen">0</div>
+<div class="num">
+<div class="buttons">
+<button>1</button>
+<button>2</button>
+<button>3</button>
+<button>AC</button>
+<button>4</button>
+<button>5</button>
+<button>6</button>
+<button>%</button>
+<button>7</button>
+<button>8</button>
+<button>9</button>
+<button>/</button>
+<button>(</button>
+<button>0</button>
+<button>)</button>
+<button>*</button>
+<button>.</button>
+<button>+</button>
+<button>-</button>
+<button>=</button>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
